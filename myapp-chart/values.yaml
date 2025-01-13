@@ -8,3 +8,7 @@ image:
 service:
   type: ClusterIP
   port: 8080
+
+serviceAccount:
+  create: true  # Set this to true to create a service account, or false if not needed
+  name: ""      # Leave empty to let Kubernetes generate a name, or provide a specific name if needed
