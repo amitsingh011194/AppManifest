@@ -1,9 +1,9 @@
-replicaCount: 4
+replicaCount: 2
 
 image:
   repository: nanajanashia/argocd-app
   pullPolicy: Always
-  tag: "1.3"
+  tag: "1.2"
 
 service:
   type: ClusterIP
