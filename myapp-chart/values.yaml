@@ -12,3 +12,12 @@ service:
 serviceAccount:
   create: true  # Set this to true to create a service account, or false if not needed
   name: ""      # Leave empty to let Kubernetes generate a name, or provide a specific name if needed
+
+ingress:
+  enabled: false  # Set this to true if you want to enable Ingress, or false to disable it
+  # If enabled is true, you can add further configurations for the ingress resource here
+  # For example:
+  #   hosts:
+  #     - host: myapp.local
+  #       paths:
+  #         - /
