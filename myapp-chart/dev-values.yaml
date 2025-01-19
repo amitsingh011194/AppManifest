@@ -14,14 +14,10 @@ serviceAccount:
   name: ""      # Leave empty to let Kubernetes generate a name, or provide a specific name if needed
 
 ingress:
-  enabled: true
-  # Define the host name you want to use to access your app
-  hosts:
-    - host: myapp.local  # Change this to your desired domain or subdomain
-      paths:
-        - /
-  # Optional: Annotations to configure things like path rewrites
-  annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
-  # Optional: TLS configuration for HTTPS (if you want to secure your app)
-  tls: []
+  enabled: false  # Set this to true if you want to enable Ingress, or false to disable it
+  # If enabled is true, you can add further configurations for the ingress resource here
+  # For example:
+  #   hosts:
+  #     - host: myapp.local
+  #       paths:
+  #         - /
