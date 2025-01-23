@@ -18,3 +18,8 @@ spec:
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         ports:
         - containerPort: {{ .Values.service.port }}
+
+      - name: mySecondApp
+        image: nginx:latest
+        
+        
